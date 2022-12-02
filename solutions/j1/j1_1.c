@@ -18,7 +18,7 @@ int main(int argc, char **argv) {
             if (sscanf(line, "%d", &tmp) == 1) { // on essaie de récupérer les données de la ligne courante
                 cal += tmp;
             }
-            else if(line[0] == '\n'){
+            else if(line[0] == '\n') {
                 calories[i] = cal;
                 cal = 0;
                 i++;
@@ -28,22 +28,22 @@ int main(int argc, char **argv) {
                 break;
             }
         }
-        if (ferror(file) != 0){
+        if (ferror(file) != 0) {
             fprintf(stderr, "Error reading file content\n");
         }
         fclose(file);
 
         int max = 0;
         int index = 0;
-        for (int j = 0; j < i; j++){
-            if (calories[j] > max){
+        for (int j = 0; j < i; j++) {
+            if (calories[j] > max) {
                 max = calories[j];
                 index = j;
             }
         }
         printf("Elf %d has the most calories with %d\n", index, max);
     }
-    else{
+    else {
         fprintf(stderr, "Error opening file\n");
     }
     return 0;

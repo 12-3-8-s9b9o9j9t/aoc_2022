@@ -18,7 +18,7 @@ int main(int argc, char **argv) {
             if (sscanf(line, "%d", &tmp) == 1) { // on essaie de récupérer les données de la ligne courante
                 cal += tmp;
             }
-            else if(line[0] == '\n'){
+            else if (line[0] == '\n') {
                 calories[i] = cal;
                 cal = 0;
                 i++;
@@ -28,7 +28,7 @@ int main(int argc, char **argv) {
                 break;
             }
         }
-        if (ferror(file) != 0){
+        if (ferror(file) != 0) {
             fprintf(stderr, "Error reading file content\n");
         }
         fclose(file);
@@ -36,24 +36,24 @@ int main(int argc, char **argv) {
         int first = 0;
         int second = 0;
         int third = 0;
-        for (int j = 0; j < i; j++){
-            if (calories[j] > first){
+        for (int j = 0; j < i; j++) {
+            if (calories[j] > first) {
                 third = second;
                 second = first;
                 first = calories[j];
             }
-            else if (calories[j] > second){
+            else if (calories[j] > second) {
                 third = second;
                 second = calories[j];
             }
-            else if (calories[j] > third){
+            else if (calories[j] > third) {
                 third = calories[j];
             }
         }
         int sum = first + second + third;
         printf("The three elves with the most calories have a total of %d cal\n", sum);
     }
-    else{
+    else {
         fprintf(stderr, "Error opening file\n");
     }
     return 0;
