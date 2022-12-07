@@ -2,11 +2,12 @@
 #include <stdlib.h>
 #include <string.h>
 
-const uint BUFFSIZE = 128;
+#define BUFFSIZE 128U
+#define NB_TYPES 52U
 
 int priority(char* compartment1 , char* compartment2, int size) {
-    int items1[52] = {0};
-    int items2[52] = {0};
+    int items1[NB_TYPES] = {0};
+    int items2[NB_TYPES] = {0};
 
     char item1 = '\0';
     char item2 = '\0';
@@ -30,7 +31,7 @@ int priority(char* compartment1 , char* compartment2, int size) {
         }
     }
 
-    for (int i = 0; i < 52; i++) {
+    for (int i = 0; i < NB_TYPES; i++) {
         if (items1[i] > 0 && items2[i] > 0) {
             return i+1;
         }

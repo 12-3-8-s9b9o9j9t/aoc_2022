@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-const uint BUFFSIZE = 8;
-const uint MAXSIZE = 1024;
+#define BUFFSIZE 8U
+#define MAXSIZE 1024U
 
 int main(int argc, char **argv) {
     FILE *file;

@@ -1,19 +1,19 @@
 #include <stdio.h> 
 #include <stdlib.h>
 
-const uint BUFFSIZE = 8;
-const uint SCORE_ROCK = 1;
-const uint SCORE_PAPER = 2;
-const uint SCORE_SCISSORS = 3;
-const uint SCORE_WIN = 6;
-const uint SCORE_DRAW = 3;
-const uint SCORE_LOSE = 0; 
-const char O_ROCK = 'A';
-const char O_PAPER = 'B';
-const char O_SCISSORS = 'C';
-const char M_ROCK = 'X';
-const char M_PAPER = 'Y';
-const char M_SCISSORS = 'Z';
+#define BUFFSIZE 8
+#define SCORE_ROCK 1
+#define SCORE_PAPER 2
+#define SCORE_SCISSORS 3
+#define SCORE_WIN 6
+#define SCORE_DRAW 3
+#define SCORE_LOSE 0 
+#define O_ROCK 'A'
+#define O_PAPER 'B'
+#define O_SCISSORS 'C'
+#define M_ROCK 'X'
+#define M_PAPER 'Y'
+#define M_SCISSORS 'Z'
 
 
 int main(int argc, char **argv) {

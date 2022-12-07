@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-const uint BUFFSIZE = 16;
+#define BUFFSIZE 16
 
 int main(int argc, char **argv) {
     FILE *file;

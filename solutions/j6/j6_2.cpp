@@ -3,7 +3,7 @@
 #include <list>
 #include <set>
 
-const uint WIN_SIZE = 14U;
+const unsigned int WIN_SIZE = 14U;
 
 int main() {
     std::ifstream file("../../input/j6.txt");

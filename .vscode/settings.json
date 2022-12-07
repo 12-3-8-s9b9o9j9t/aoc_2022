@@ -31,6 +31,14 @@
         "typeinfo": "cpp",
         "vector": "cpp",
         "utility": "cpp",
-        "deque": "cpp"
+        "deque": "cpp",
+        "array": "cpp",
+        "bit": "cpp",
+        "list": "cpp",
+        "set": "cpp",
+        "fstream": "cpp",
+        "memory": "cpp",
+        "tuple": "cpp",
+        "map": "cpp"
     }
 }
