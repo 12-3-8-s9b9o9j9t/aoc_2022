@@ -1,7 +1,6 @@
 #include <fstream>
 #include <iostream>
 #include <vector>
-#include <stack>
 
 constexpr uint BUFF = 32;
 constexpr uint MAXSIZE = 100000;
