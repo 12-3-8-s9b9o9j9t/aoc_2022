@@ -33,7 +33,7 @@ int priority(char **rucksacks) {
 }
 
 int main(int argc, char **argv) {
-    FILE *file;
+    FILE *file = NULL;
     if (file = fopen("../../input/j3.txt", "r")) { // on essaie d'ouvrir le fichier
         char lines[3][BUFFSIZE] = {{0}};
 

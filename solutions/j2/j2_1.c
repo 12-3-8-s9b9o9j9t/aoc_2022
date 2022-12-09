@@ -17,7 +17,7 @@
 
 
 int main(int argc, char **argv) {
-    FILE *file;
+    FILE *file = NULL;
     if (file = fopen("../../input/j2.txt", "r")) { // on essaie d'ouvrir le fichier
         char line[BUFFSIZE];
 

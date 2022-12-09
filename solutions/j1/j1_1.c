@@ -5,7 +5,7 @@
 #define MAXSIZE 1024U
 
 int main(int argc, char **argv) {
-    FILE *file;
+    FILE *file = NULL;
     if (file = fopen("../../input/j1.txt", "r")) { // on essaie d'ouvrir le fichier
         char line[BUFFSIZE];
         int calories[MAXSIZE];
