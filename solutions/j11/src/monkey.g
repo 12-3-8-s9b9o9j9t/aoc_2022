@@ -20,14 +20,15 @@ monkey
     	test[m];
 
 items [Monkey m]
-    :	'Starting items:' i=INT {m.addItem(Integer.parseInt($i.text));}
-    	(',' i=INT {m.addItem(Integer.parseInt($i.text));})*;
+    :	'Starting items:' i=INT {m.addItem(Long.valueOf($i.text));}
+    	(',' i=INT {m.addItem(Long.valueOf($i.text));})*;
 
 op [Monkey m]
-    :	'Operation: new = old'{Integer tmp = null;}
+    :	'Operation: new = old'{Long tmp = null;}
     	operator=OP
-    	('old' | x=INT {tmp = Integer.valueOf($x.text);})
+    	('old' | x=INT {tmp = Long.valueOf($x.text);})
     	{m.setOp($operator.text, tmp);};
+
 test [Monkey m]
     :	'Test: divisible by' div=INT t=yes f=no {m.setTest(Integer.valueOf($div.text), $t.m, $f.m);};
 

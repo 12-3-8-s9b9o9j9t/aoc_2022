@@ -1,4 +1,4 @@
-// $ANTLR 3.5.1 C:\\Users\\yanis\\Desktop\\AOC\\2022\\solutions\\j11\\src\\monkey.g 2022-12-11 19:33:00
+// $ANTLR 3.5.1 C:\\Users\\yanis\\Desktop\\AOC\\2022\\solutions\\j11\\src\\monkey.g 2022-12-11 23:39:14
 
 package output;
 
@@ -232,7 +232,7 @@ public class monkeyLexer extends Lexer {
 		try {
 			int _type = OP;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Users\\yanis\\Desktop\\AOC\\2022\\solutions\\j11\\src\\monkey.g:40:5: ( '+' | '*' )
+			// C:\\Users\\yanis\\Desktop\\AOC\\2022\\solutions\\j11\\src\\monkey.g:41:5: ( '+' | '*' )
 			// C:\\Users\\yanis\\Desktop\\AOC\\2022\\solutions\\j11\\src\\monkey.g:
 			{
 			if ( (input.LA(1) >= '*' && input.LA(1) <= '+') ) {
@@ -259,8 +259,8 @@ public class monkeyLexer extends Lexer {
 		try {
 			int _type = ID;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Users\\yanis\\Desktop\\AOC\\2022\\solutions\\j11\\src\\monkey.g:42:5: ( ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )* )
-			// C:\\Users\\yanis\\Desktop\\AOC\\2022\\solutions\\j11\\src\\monkey.g:42:7: ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
+			// C:\\Users\\yanis\\Desktop\\AOC\\2022\\solutions\\j11\\src\\monkey.g:43:5: ( ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )* )
+			// C:\\Users\\yanis\\Desktop\\AOC\\2022\\solutions\\j11\\src\\monkey.g:43:7: ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
 			{
 			if ( (input.LA(1) >= 'A' && input.LA(1) <= 'Z')||input.LA(1)=='_'||(input.LA(1) >= 'a' && input.LA(1) <= 'z') ) {
 				input.consume();
@@ -270,7 +270,7 @@ public class monkeyLexer extends Lexer {
 				recover(mse);
 				throw mse;
 			}
-			// C:\\Users\\yanis\\Desktop\\AOC\\2022\\solutions\\j11\\src\\monkey.g:42:31: ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
+			// C:\\Users\\yanis\\Desktop\\AOC\\2022\\solutions\\j11\\src\\monkey.g:43:31: ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
 			loop1:
 			while (true) {
 				int alt1=2;
@@ -315,10 +315,10 @@ public class monkeyLexer extends Lexer {
 		try {
 			int _type = INT;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Users\\yanis\\Desktop\\AOC\\2022\\solutions\\j11\\src\\monkey.g:45:5: ( ( '0' .. '9' )+ )
-			// C:\\Users\\yanis\\Desktop\\AOC\\2022\\solutions\\j11\\src\\monkey.g:45:7: ( '0' .. '9' )+
+			// C:\\Users\\yanis\\Desktop\\AOC\\2022\\solutions\\j11\\src\\monkey.g:46:5: ( ( '0' .. '9' )+ )
+			// C:\\Users\\yanis\\Desktop\\AOC\\2022\\solutions\\j11\\src\\monkey.g:46:7: ( '0' .. '9' )+
 			{
-			// C:\\Users\\yanis\\Desktop\\AOC\\2022\\solutions\\j11\\src\\monkey.g:45:7: ( '0' .. '9' )+
+			// C:\\Users\\yanis\\Desktop\\AOC\\2022\\solutions\\j11\\src\\monkey.g:46:7: ( '0' .. '9' )+
 			int cnt2=0;
 			loop2:
 			while (true) {
@@ -367,8 +367,8 @@ public class monkeyLexer extends Lexer {
 		try {
 			int _type = WS;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Users\\yanis\\Desktop\\AOC\\2022\\solutions\\j11\\src\\monkey.g:48:5: ( ( ' ' | '\\t' | '\\r' | '\\n' ) )
-			// C:\\Users\\yanis\\Desktop\\AOC\\2022\\solutions\\j11\\src\\monkey.g:48:9: ( ' ' | '\\t' | '\\r' | '\\n' )
+			// C:\\Users\\yanis\\Desktop\\AOC\\2022\\solutions\\j11\\src\\monkey.g:49:5: ( ( ' ' | '\\t' | '\\r' | '\\n' ) )
+			// C:\\Users\\yanis\\Desktop\\AOC\\2022\\solutions\\j11\\src\\monkey.g:49:9: ( ' ' | '\\t' | '\\r' | '\\n' )
 			{
 			if ( (input.LA(1) >= '\t' && input.LA(1) <= '\n')||input.LA(1)=='\r'||input.LA(1)==' ' ) {
 				input.consume();

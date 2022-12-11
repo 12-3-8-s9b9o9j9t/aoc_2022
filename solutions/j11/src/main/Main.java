@@ -9,6 +9,9 @@ import output.monkeyLexer;
 import output.monkeyParser;
 
 public class Main {
+    
+    public static final int RELIEF = 1; // 3 for part 1
+    public static final int ROUNDS = 10000; // 20 for part 1
 
     public static void main(String[] args) throws Exception {
         Path filePath = Path.of("resource/j11.txt");
@@ -22,14 +25,14 @@ public class Main {
 
         List<Monkey> monkeys = Monkey.MONKEYS;
 
-        for (int round = 0; round < 20; round++) {
+        for (int round = 0; round < ROUNDS; round++) {
             for (Monkey monkey : monkeys) {
                 monkey.turn();
             }
         }
 
-        int first = 0;
-        int second = 0;
+        long first = 0;
+        long second = 0;
         for (Monkey monkey : monkeys) {
             if (monkey.getNbInspect() > first) {
                 second = first;
