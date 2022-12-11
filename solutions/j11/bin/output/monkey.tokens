@@ -1,0 +1,22 @@
+T__8=8
+T__9=9
+T__10=10
+T__11=11
+T__12=12
+T__13=13
+T__14=14
+T__15=15
+T__16=16
+ID=4
+INT=5
+OP=6
+WS=7
+','=8
+':'=9
+'If false: throw to monkey'=10
+'If true: throw to monkey'=11
+'Monkey'=12
+'Operation: new = old'=13
+'Starting items:'=14
+'Test: divisible by'=15
+'old'=16
